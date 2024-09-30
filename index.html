@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            text-align: center;
+            
+            
+        }
+        table{
+            width: 300px;
+        }
+
+        table, td {
+            border: 1px solid black;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        thead{
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        tfoot{
+            background-color: darkgray;
+            color: white;
+        }
+
+        .formulario{
+            margin-top: 25px;
+            align-items: center;
+            
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 5px;
+            padding: 10px;
+            
+            
+            
+        }
+
+        input[type="text"], select{
+            width: 300px;
+        }
+        input[type="submit"]{
+
+            margin: 25px;
+            background-color: rgb(19, 172, 57);
+            padding: 10px;
+            color: white;
+            border-radius: 20px;
+            width: 100px;
+            box-shadow: 3px 3px 5px black;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(10, 139, 42);
+            cursor: pointer;
+        }
+
+        input, select{
+            
+            margin-left: auto;
+            margin-right: auto;            
+            margin-bottom: 15px;
+            
+        }
+
+        label, p{
+            font-weight: bold;
+        }
+        p{
+            font-size: 20px;
+        }
+
+    </style>
+    <title>Actividad 4</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Ingresos y Gastos Mensuales</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>Mes</td>
+                    <td>Ingresos</td>
+                    <td>Gastos</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Enero</td>
+                    <td>5000</td>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <td>Febrero</td>
+                    <td>5000</td>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>6000</td>
+                    <td>4000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>16,000</td>
+                    <td>11,000</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Formulario personal</h2>
+
+        <form class="formulario">
+            <label for="">Cual es el nombre de tu Padre?</label>
+            <input type="text" placeholder="Introduce tu respuesta">
+            <label for="">Cual es el nombre de tu Madre?</label>
+            <input type="text" placeholder="Introduce tu respuesta">
+            <label for="">Cual es el nombre de tu Abuela?</label>
+            <input type="text" placeholder="Introduce tu respuesta">
+            <label for="">Cual es el nombre de tu Abuelo?</label>
+            <input type="text" placeholder="Introduce tu respuesta">
+            <label for="">Cual es el nombre de tu Vecina?</label>
+            <input type="text" placeholder="Introduce tu respuesta">
+            <label for="">Cual es el nombre de tu Vecino?</label>
+            <input type="text" placeholder="Introduce tu respuesta">
+            <label for="">Cual es tu edad?</label>
+            <input type="text" placeholder="Introduce tu respuesta">
+            <label for="">En que mes naciste?</label>
+            <select name="mes" id="mes">
+                <option value="" selected>--Seleccionar--</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Enero">Junio</option>
+                <option value="Febrero">Julio</option>
+                <option value="Marzo">Agosto</option>
+                <option value="Abril">Septiembre</option>
+                <option value="Mayo">Octubre</option>
+                <option value="Enero">Noviembre</option>
+                <option value="Febrero">Diciembre</option>
+                
+            </select>
+
+            <h2>Comida favorita</h2>
+            <p>Elija su menu</p>
+            <div>
+                <input type="checkbox" id="arroz" value="Arroz">
+                <label for="arroz">Arroz</label>
+                <input type="checkbox" id="Habichuela" value="Habichuela">
+                <label for="Habichuela">Habichuela</label>
+                <input type="checkbox" id="Guandules" value="Guandules">
+                <label for="Guandules">Guandules</label>
+                <input type="checkbox" id="Pollo" value="Pollo">
+                <label for="Pollo">Pollo</label>
+           
+            </div>
+            <div>
+                <p>Ensalada</p>
+                <input type="radio" name="ensalada" id="verde" value="verde">
+                <label for="verde">Ensalada verde</label>
+                <input type="radio" name="ensalada" id="Rusa" value="Rusa">
+                <label for="Rusa">Ensalada Rusa</label>
+                <input type="radio" name="ensalada" id="Vegetales" value="Vegetales">
+                <label for="Vegetales">Ensalada Vegetales</label>
+            </div>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+</body>
+</html>
